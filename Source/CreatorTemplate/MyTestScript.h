@@ -15,6 +15,13 @@ public:
 	// Sets default values for this actor's properties
 	AMyTestScript();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
+	FString string = "";
+
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
+	UStaticMeshComponent* mesh;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
